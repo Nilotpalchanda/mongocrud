@@ -1,15 +1,18 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+     
   <title>MY APP</title>
 </head>
 <body>
   May Node and Express be with you.  <a href="/blog" target="_blank">blog page</a>
-  <form  method="POST" action="/posts" >
+  <form  method="POST" enctype="multipart/form-data" action="/posts" >
     <input type="text" placeholder="post" name="post_title">
+    <!-- <input type="file" name="post_iamge"> -->
+    <input type="file" name="post_iamge"/>
     <input type="text" placeholder="comment" name="post_comment">
     <button type="submit">Submit</button>
   </form>
 </body>
 </html>
+
